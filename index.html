@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fithub – Fitness Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">وقت اللياقة</a>
+  <ul class="nav-links">
+    <li><a href="#" class="active">الرئيسية</a></li>
+    <li><a href="#classes">الصفوف</a></li>
+    <li><a href="#testimonials">عنّا</a></li>
+    <li><a href="#pricing">التسعير</a></li>
+    <li><a href="#cta">اتصل بنا</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">انضم الآن</a>
+  <div class="nav-hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#" onclick="closeMobile()">الرئيسية</a>
+  <a href="#classes" onclick="closeMobile()">الصفوف</a>
+  <a href="#testimonials" onclick="closeMobile()">عنّا</a>
+  <a href="#pricing" onclick="closeMobile()">التسعير</a>
+  <a href="#cta" onclick="closeMobile()">اتصل بنا</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">مرحبا في وقت اللياقة</div>
+    <h1 class="hero-title">حقق أكثر <br>من مجرد <span>لياقة</span></h1>
+    <p class="hero-subtitle">أضف القوة، والمرونة، والتحمل في مجتمع يقدّر الصحة الشاملة والنمو الداعم.</p>
+    <div class="hero-btns">
+      <a href="#classes" class="btn-primary">ابدأ الآن</a>
+      <a href="#cta" class="btn-outline">انضم لتجربة مجانية</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS TICKER -->
+<div class="stats-bar">
+  <div class="stats-track" id="statsTicker">
+    <div class="stat-item"><span class="stat-num">500+</span><span class="stat-txt">أعضاء سعداء</span></div>
+    <div class="stat-item"><span class="stat-num">30+</span><span class="stat-txt">الصفوف الأسبوعية</span></div>
+    <div class="stat-item"><span class="stat-num">10</span><span class="stat-txt">مدربون معتمدون</span></div>
+    <div class="stat-item"><span class="stat-num">99%</span><span class="stat-txt">معدل الرضا</span></div>
+    <div class="stat-item"><span class="stat-num">5★</span><span class="stat-txt">معدل التقييم</span></div>
+    <div class="stat-item"><span class="stat-num">500+</span><span class="stat-txt">أعضاء سعداء</span></div>
+    <div class="stat-item"><span class="stat-num">30+</span><span class="stat-txt">الصفوف الأسبوعية</span></div>
+    <div class="stat-item"><span class="stat-num">10</span><span class="stat-txt">مدربون معتمدون</span></div>
+    <div class="stat-item"><span class="stat-num">99%</span><span class="stat-txt">معدل الرضا</span></div>
+    <div class="stat-item"><span class="stat-num">5★</span><span class="stat-txt">معدل التقييم</span></div>
+  </div>
+</div>
+
+<!-- CLASSES -->
+<section id="classes">
+  <div class="classes-header reveal">
+    <div>
+      <div class="section-label">برامجنا</div>
+      <h2 class="section-title">اختر طريقك<br>إلى اللياقة</h2>
+    </div>
+    <a href="#" class="btn-outline" style="white-space:nowrap">عرض جميع الصفوف</a>
+  </div>
+  <div class="classes-grid reveal">
+    <div class="class-card">
+      <img src="https://framerusercontent.com/images/rtnKFOSkj1Dp1bgztzTtzJ5zz0.webp" alt="HIIT Training" loading="lazy"/>
+      <div class="class-card-overlay">
+        <span class="class-tag">جمع اللياقة</span>
+        <span class="class-name">تدريب شديد الحدة</span>
+        <span class="class-type">حرق السعرات</span>
+      </div>
+      <div class="class-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </div>
+    <div class="class-card">
+      <img src="https://framerusercontent.com/images/lmPWXv36SURrc2gREiAGeQZy0.webp" alt="Yoga" loading="lazy"/>
+      <div class="class-card-overlay">
+        <span class="class-tag">سلام اليوجا</span>
+        <span class="class-name">تيار فنيسا</span>
+        <span class="class-type">اليوجا · 60 دقيقة · جميع المستويات</span>
+      </div>
+      <div class="class-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </div>
+    <div class="class-card">
+      <img src="https://framerusercontent.com/images/XsQO7nKF2EJcoOLs6In9x5I.webp" alt="Cycling" loading="lazy"/>
+      <div class="class-card-overlay">
+        <span class="class-tag">دورة القيادة</span>
+        <span class="class-name">تدريب القيادة</span>
+        <span class="class-type">القيادة · 45 دقيقة · طاقة عالية</span>
+      </div>
+      <div class="class-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </div>
+    <div class="class-card">
+      <img src="https://framerusercontent.com/images/SqX15jQW6ndCetit2gVtmUNrmk.png" alt="Strength" loading="lazy"/>
+      <div class="class-card-overlay">
+        <span class="class-tag">شق الكارديو</span>
+        <span class="class-name">لياقة الرقص</span>
+        <span class="class-type">الرقص · 50 دقيقة · ممتع وديناميك</span>
+      </div>
+      <div class="class-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE SLIDER -->
+<section id="gallery" style="padding-bottom: 100px;">
+  <div class="reveal" style="margin-bottom:40px">
+    <div class="section-label">المعرض</div>
+    <h2 class="section-title">داخل وقت اللياقة</h2>
+  </div>
+  <div class="slider-wrap reveal">
+    <div class="slider-track" id="sliderTrack">
+      <div class="slide">
+        <img src="m1.avif" alt="Fit time Gym"/>
+        <div class="slide-caption">بناء القوة الحقيقية</div>
+      </div>
+      <div class="slide">
+        <img src="https://framerusercontent.com/images/rtnKFOSkj1Dp1bgztzTtzJ5zz0.webp" alt="Fit time Gym"/>
+        <div class="slide-caption">تدرب مثل البطل</div>
+      </div>
+      <div class="slide">
+        <img src="https://framerusercontent.com/images/XsQO7nKF2EJcoOLs6In9x5I.webp" alt="Fit time Gym"/>
+        <div class="slide-caption">تجاوز حدودك</div>
+      </div>
+    </div>
+    <button title="slide" class="slider-btn slider-prev" id="sliderPrev">
+      <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button title="slide" class="slider-btn slider-next" id="sliderNext">
+      <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+  <div class="slider-dots" id="sliderDots">
+    <div class="dot active" data-i="0"></div>
+    <div class="dot" data-i="1"></div>
+    <div class="dot" data-i="2"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="testi-header reveal">
+    <div class="section-label" style="text-align:center">الشهادات</div>
+    <h2 class="section-title" style="text-align:center">التحولات تتحدث<br>أقوى من الكلمات</h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="testi-quote">"قبل الانضمام إلى وقت اللياقة، كنت ملتزمًا في اللياقة. لكن المدربين هنا مذهلون، والمجتمع داعم جداً! إنه مثل المنزل الثاني بالنسبة لي الآن."</p>
+      <div class="testi-person">
+        <img class="testi-avatar" src="https://framerusercontent.com/images/awdMsD53K09SWaJjsP7aY6Te1I.webp" alt="Joanne"/>
+        <div><div class="testi-name">أحمد</div><div class="testi-role">عضو منذ 2023</div></div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="testi-quote">"قبل الانضمام إلى وقت اللياقة، كنت ملتزمًا في اللياقة. لكن المدربين هنا مذهلون، والمجتمع داعم جداً! إنه مثل المنزل الثاني بالنسبة لي الآن."</p>
+      <div class="testi-person">
+        <img class="testi-avatar" src="https://framerusercontent.com/images/1jRsWVWnB1O86FhQUlHxDhiz5Fg.webp" alt="Caleb"/>
+        <div><div class="testi-name">حامد</div><div class="testi-role">عضو منذ 2023</div></div>
+      </div>
+    </div>
+    <div class="testi-card reveal">
+      <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+      <p class="testi-quote">"قبل الانضمام إلى وقت اللياقة، كنت ملتزمًا في اللياقة. لكن المدربين هنا مذهلون، والمجتمع داعم جداً! إنه مثل المنزل الثاني بالنسبة لي الآن."</p>
+      <div class="testi-person">
+        <img class="testi-avatar" src="https://framerusercontent.com/images/CKS3DiaNYOI8svZDY4d0xz0Ck.webp" alt="Donna"/>
+        <div><div class="testi-name">آمنة</div><div class="testi-role">عضو منذ 2022</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="pricing-header reveal">
+    <div class="section-label">الأسعار</div>
+    <h2 class="section-title">خطط مرنة<br>لكل الميزانيات</h2>
+    <p class="section-sub" style="margin: 14px auto 0; text-align:center">اختر خطة تناسبك. لا توجد التزامات طويلة المدى مطلوبة.</p>
+  </div>
+  <div class="pricing-grid">
+    <div class="pricing-card reveal">
+      <div>
+        <div class="plan-name">الخطة الأساسية</div>
+        <div class="plan-price"><sup>$</sup>39</div>
+        <div class="plan-freq">3 أيام/أسبوع لشهر</div>
+      </div>
+      <hr class="plan-divider"/>
+      <ul class="plan-features">
+        <li class="plan-feature">وصول الى جميع فصول الكارديو</li>
+        <li class="plan-feature">تقييم الجسم الشهري</li>
+        <li class="plan-feature">التوجيه التغذوي</li>
+      </ul>
+      <a href="#cta" class="plan-btn">ابدأ الآن</a>
+    </div>
+    <div class="pricing-card featured reveal">
+      <div class="plan-badge">شائعة</div>
+      <div>
+        <div class="plan-name">الخطة المميزة</div>
+        <div class="plan-price"><sup>$</sup>59</div>
+        <div class="plan-freq">3 أيام/أسبوع لشهر</div>
+      </div>
+      <hr class="plan-divider"/>
+      <ul class="plan-features">
+        <li class="plan-feature">جميع ميزات الخطة الأساسية</li>
+        <li class="plan-feature">جلسات تدريب القوة</li>
+        <li class="plan-feature">التوجيه التغذوي</li>
+      </ul>
+      <a href="#cta" class="plan-btn">ابدأ الآن</a>
+    </div>
+    <div class="pricing-card reveal">
+      <div>
+        <div class="plan-name">خطة النخبة</div>
+        <div class="plan-price"><sup>$</sup>89</div>
+        <div class="plan-freq">3 أيام/أسبوع لشهر</div>
+      </div>
+      <hr class="plan-divider"/>
+      <ul class="plan-features">
+        <li class="plan-feature">جميع ميزات الخطة المميزة</li>
+        <li class="plan-feature">جلسة تدريب شخصية</li>
+        <li class="plan-feature">حجز فصول أولوية</li>
+      </ul>
+      <a href="#cta" class="plan-btn">ابدأ الآن</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="why-inner">
+    <div>
+      <div class="section-label reveal">لماذا وقت اللياقة</div>
+      <h2 class="section-title reveal">لماذا وقت اللياقة هو شريك اللياقة البدنية المثالي لك</h2>
+      <div class="why-features">
+        <div class="why-feat reveal">
+          <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div>
+            <div class="why-feat-title">تمارين مخصصة</div>
+            <div class="why-feat-desc">نحن ننشئ خطط تمارين شخصية مصممة تحديداً لاحتياجات واهدافك، مما يضمن أن كل جانب من رحلة اللياقة البدنية الخاصة بك مخصص لمساعدتك على النجاح.</div>
+          </div>
+        </div>
+        <div class="why-feat reveal">
+          <div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div>
+            <div class="why-feat-title">جداول مرنة</div>
+            <div class="why-feat-desc">استمتع بالمرن من برامج اللياقة البدنية الخاصة بنا، والتي تقدم فصولًا في الصباح الباكر حتى الليل، بحيث يمكنك اختيار الوقت الذي يناسب جدولك أفضل.</div>
+          </div>
+        </div>
+        <div class="why-feat reveal">
+          <div class="why-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+          <div>
+            <div class="why-feat-title">أحدث المعدات</div>
+            <div class="why-feat-desc">ابقَ على قيد التطور مع تقنية متطورة تُحسّن تمارينك وتُقدِّم بيانات وتحليلات في الوقت الحقيقي لتساعدك على تتبع تقدمك.</div>
+          </div>
+        </div>
+        <div class="why-feat reveal">
+          <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div>
+            <div class="why-feat-title">خبراء التغذية</div>
+            <div class="why-feat-desc">برنامجنا الرياضي الشامل يتجاوز التمارين؛ نوفر خطط وجبات مخصصة لدعم رحلتك بقيادة متوازنة من حيث التغذية.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="why-img reveal">
+      <img src="https://framerusercontent.com/images/SqX15jQW6ndCetit2gVtmUNrmk.png" alt="Athlete training"/>
+      <div class="why-img-badge">
+        <strong>10+</strong>
+        <span>سنوات من التميز</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" style="padding:0">
+  <div style="position:relative;overflow:hidden;padding:120px 60px;text-align:center">
+    <div class="cta-bg"></div>
+    <div class="cta-content reveal">
+      <div class="section-label" style="text-align:center">احجز مكانك</div>
+      <h2 class="section-title" style="font-size:clamp(3rem,6vw,5.5rem)">مستعد لبدء رحلتك مع وقت اللياقة?</h2>
+      <p style="color:rgba(255,255,255,.65);font-size:1.05rem;margin:20px auto 40px;max-width:400px">انضم إلى آلاف الأعضاء الذين يحولون حياتهم بالفعل. الصف الأول مجاناً.</p>
+      <a href="#" class="btn-primary" style="font-size:.9rem;padding:16px 48px">انضم الآن</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-logo">وقت اللياقة</div>
+      <p class="footer-brand-desc">نحن نركز على احتياجات كل عضو لتحسين وتنمية اللياقة البدنية والصحة والنتائج العامة في الاستثمار في الحياة.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" title="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20.06 12 20.06 12 20.06s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+        </a>
+        <a href="#" class="social-btn" title="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>وصول سريع</h4>
+      <ul>
+        <li><a href="#">الرئيسية</a></li>
+        <li><a href="#testimonials">من نحن</a></li>
+        <li><a href="#classes">الصفوف</a></li>
+        <li><a href="#">الجدول الزمني</a></li>
+        <li><a href="#cta">اتصل بنا</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>الصفوف</h4>
+      <ul>
+        <li><a href="#">جمع اللياقة</a></li>
+        <li><a href="#">سلام اليوجا</a></li>
+        <li><a href="#">بلاتيس</a></li>
+        <li><a href="#">ضربة الكارديو</a></li>
+        <li><a href="#">دورة التدريب</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>النشرة البريدية</h4>
+      <p style="font-size:.82rem;color:var(--muted);line-height:1.6;margin-bottom:14px">اشترك وابقَ على اطلاع بأحدث الصفوف والعروض.</p>
+      <div class="footer-newsletter">
+        <button>اشترك</button>
+        <input type="email" placeholder="عنوان بريدك الإلكتروني"/>
+        
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 كل الحقوق محفوظة وقت اللياقة</p>
+    <p>تم بناءه الى محبين اللياقة</p>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
